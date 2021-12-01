@@ -58,12 +58,12 @@
     - disable-network-offloading
     - deploy-packages
 
-- name: Ensure irqbalance is disabled
-  systemd:
-    name: irqbalance
-    enabled: no
-    daemon_reload: yes
-    state: stopped
+# - name: Ensure irqbalance is disabled
+#   systemd:
+#     name: irqbalance
+#     enabled: no
+#     daemon_reload: yes
+#     state: stopped
 
 - name: Deploy suricata.yaml
   template:
