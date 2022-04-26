@@ -105,7 +105,7 @@
   template:
     src: "opt/{{ item }}.sh.j2"
     dest: "/opt/{{ item }}.sh"
-    mode: 755
+    mode: 0755
     owner: root
     group: root
     backup: yes
